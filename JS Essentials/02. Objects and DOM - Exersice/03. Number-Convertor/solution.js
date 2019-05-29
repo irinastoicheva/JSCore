@@ -30,5 +30,4 @@ function solve() {
         let outputField = document.querySelector('#result');
         outputField.value = result;
     });
-
 }
