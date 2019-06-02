@@ -7,11 +7,15 @@ function solve() {
         let rowsInTableBody = tableBody.children;
         for (let i = 0; i < rowsInTableBody.length; i++) {
             let row = rowsInTableBody[i];
+            row.classList.remove('select');
+        }
+        for (let i = 0; i < rowsInTableBody.length; i++) {
+            let row = rowsInTableBody[i];
             let cellInRow = row.children;
             for (let j = 0; j < cellInRow.length; j++) {
                 let cell = cellInRow[j];
                 let cellText = cell.textContent.toLowerCase();
-                if (cellText.includes(insertText)) {
+                if (cellText.includes(insertText) && insertText != '') {
                     row.classList.add('select');
                     insertField.value = '';
                 }
