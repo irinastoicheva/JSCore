@@ -30,4 +30,4 @@ function solve(arr) {
     }
 }
 
-solve([6, 4, 0, 0]);
+solve([4, 4, 0, 0]);
