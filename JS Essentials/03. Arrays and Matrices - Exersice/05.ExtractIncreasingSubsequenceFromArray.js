@@ -12,7 +12,6 @@ function solve(arr) {
             biggestNumber = currentNumber;
         }
     }
-
     console.log(result.join('\n'));
 }
 
