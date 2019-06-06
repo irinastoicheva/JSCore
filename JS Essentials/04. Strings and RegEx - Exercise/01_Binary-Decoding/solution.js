@@ -1,19 +1,13 @@
 function solve() {
     let input = document.getElementById('input').value.split('');
-    let sum = 0;
-    for (let i = 0; i < input.length; i++) {
-        if (input[i] === '1') {
-            sum++;
-        }
-    }
-    if (sum / 10 > 0) {
-        sum = sum / 10 + sum % 10
-    }
+    let sum = input.reduce((a,b) => Number(a) + Number(b), 0)
+        .toString().split('').reduce((a,b) => Number(a) + Number(b), 0);
+    
     for (let i = 0; i < sum; i++) {
         input.pop();
         input.shift();
     }
-    
+
     let result = '';
 
     for (let i = 0; i < input.length; i += 8) {
