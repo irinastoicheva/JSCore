@@ -41,8 +41,6 @@ function coffeeStorage() {
         }
 
 
-
-
         function addCommand(args) {
 
             let [brand, coffeName, expireDate, quantityToAdd] = args;
@@ -75,13 +73,8 @@ function coffeeStorage() {
                     } else if (currentDate === dateOfCoffee) {
                         brands[brand][coffeName].quantity += quantityToAdd;
                     }
-
-
                 }
-
             }
-
-
         }
 
 
@@ -99,10 +92,7 @@ function coffeeStorage() {
                     if (stockQuantity >= quantityToRemove) {
                         brands[brand][coffeName].quantity -= quantityToRemove;
                     }
-
-
                 }
-
             }
         }
 
@@ -147,8 +137,6 @@ function coffeeStorage() {
                 paragraphToChange.innerHTML += coffeeMessages
                 paragraphToChange.innerHTML += `<br>`
             }
-
-
         }
     }
 }
