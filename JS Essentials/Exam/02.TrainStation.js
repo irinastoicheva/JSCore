@@ -16,7 +16,7 @@ function solve(capacity, arr) {
 
     let trainArr = JSON.stringify(train.join(', '));
     let trainOutput = JSON.parse(trainArr);
-    console.log(`[${trainOutput}]`);
+    console.log(`[ ${trainOutput} ]`);
     if (currentPersons > 0) {
         console.log(`Could not fit ${currentPersons} passengers`);
     } else {
