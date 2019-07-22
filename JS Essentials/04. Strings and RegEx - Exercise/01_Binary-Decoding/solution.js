@@ -2,7 +2,7 @@ function solve() {
     let input = document.getElementById('input').value.split('');
     let sum = input.reduce((a,b) => Number(a) + Number(b), 0)
         .toString().split('').reduce((a,b) => Number(a) + Number(b), 0);
-    
+
     for (let i = 0; i < sum; i++) {
         input.pop();
         input.shift();
